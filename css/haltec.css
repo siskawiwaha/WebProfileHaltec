@@ -1,0 +1,445 @@
+
+@import url('../fonts/Roboto-Regular.ttf');
+
+body {
+    overflow-x:hidden;
+}
+.navbar {
+    width: 100%;
+    height: 81px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar-nav, .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+a , .nav-link {
+    color: #FFFFFF;
+}
+.jumbotron {
+    height: 700px;
+    background-image: url('../images/Image\ \(6\).png');
+    background-repeat: no-repeat;
+}
+
+.h-haltec {
+    font-family: 'Roboto', sans-serif;
+    line-height: 75px;
+    letter-spacing: 0.03em;
+    font-weight: 900
+}
+
+.content-klien {
+    margin-top: 70px;
+}
+
+.content-top {
+    margin-top: 150px;
+}
+.content-1 {
+    margin-top: 60px;
+}
+.content-2 {
+    margin-top: 60px;
+}
+
+.text-content-2 {
+    margin-top: 30px;
+}
+
+
+.tagline {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 75px;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+
+.p-tentang {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-haltec {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 36px;
+}
+
+.p-layanan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.card {
+    height: 386px;
+    width: 346px;
+    background: #FFFFFF;
+    box-shadow: -6px -6px 6px 14px rgba(113, 109, 109, 0.036), 6px 6px 6px 14px rgba(113, 109, 109, 0.036);
+    border-radius: 7px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.card:hover {
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    background: #142B72;
+    transition: all .5s ease 0s;
+}
+
+.img-card {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.p-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    line-height: 23px;
+    letter-spacing: 0.012em;
+    color: #282828;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.p-card {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.012em;
+    color: rgba(32, 32, 32, 0.56);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.study-case {
+    margin-top: 80px;
+}
+
+.p-studi {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-studi-haltec {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 36px;
+    color: #282828;
+    font-weight: 500;
+    margin-left: 150px;
+    letter-spacing: 0.012em;
+}
+
+.see {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    letter-spacing: 0.012em;
+    color: #4A93FF;
+}
+
+.card-case {
+    
+}
+
+.card-case .img-card-case {
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+}
+
+.card-case:hover .img-card-case {
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+
+.text-card-case {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 36px;
+    color: #000000;
+
+}
+
+.project-done {
+    margin-top: 80px;
+}
+
+.number {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-project {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(40, 40, 40, 0.56);
+    letter-spacing: 0.012em;
+}
+
+.p-kualitas {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+}
+
+.p-sebagai {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    color: #282828;
+
+}
+
+.p-klien {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-partner {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-apa {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.012em;
+    color: #282828;
+}
+
+.p-kata-mereka {
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    letter-spacing: 0.012em;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 21px;
+}
+
+.icon-horizontal {
+    text-align: center !important;
+    margin: auto;
+}
+
+.navbar-active {
+    background: #fff !important;
+}
+
+.nav-link-active {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.non-active {
+    color: #fff;
+}
+
+.img-klien-1 {
+    opacity: 0.4;
+    transition: transform 250ms;
+}
+
+.img-klien-1:hover {
+    opacity: 1.0;
+    transform: translateY(-10px);
+}
+
+.img-klien-2 {
+    opacity: 0.4;
+    transition: transform 250ms;
+}
+
+.img-klien-2:hover {
+    opacity: 1.0;
+    transform: translateY(-10px);
+}
+
+.img-klien-3 {
+    opacity: 0.4;
+    transition: transform 250ms;
+}
+
+.img-klien-3:hover {
+    opacity: 1.0;
+    transform: translateY(-10px);
+}
+
+.img-klien {
+    opacity: 0.4;
+    transition: transform 250ms;
+}
+
+.img-klien:hover {
+    opacity: 1.0;
+    transform: translateY(-10px);
+}
+
+.img-apa-human {
+    transition: transform 250ms;
+}
+.img-apa-human:hover{
+    transform: translateY(-10px);
+}
+
+.h-alamat {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    line-height: 36px;
+    color: #282828;
+    font-weight: 500;
+}
+
+.h-tentang {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 36px;
+}
+
+.p-help {
+    font-family: 'Roboto', sans-serif;
+    color: #142B72;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 36px;
+}
+
+.p-alamat {
+    font-weight: normal !important;
+    font-size: 18px;
+    line-height: 30px;
+    color: #282828;
+
+}
+
+.span-whatsapp {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.span-instagram {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.span-no-hp {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.footer-wrap {
+    overflow-x: hidden;
+    background: rgba(215, 220, 236, 0.42);
+    height: 300px;
+}
+
+
+.p-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.text-slider {
+    font-family: 'Roboto', sans-serif !important;
+    color: #282828;
+}
+
+a {
+    background-color: #fff;
+    color: #fff;
+	font-size: 500%;
+	text-decoration: none;
+	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 1s background-size;
+}
+
+a:hover {
+	background-size: 100% .1em;
+}
+
+/* Variations */
+a.left {
+	background-position: left bottom;
+}
+
+a.right {
+	background-position: right bottom;
+}

@@ -4,6 +4,12 @@
 body {
     overflow-x:hidden;
 }
+
+section {
+    scroll-snap-align: start !important;
+}
+
+
 .navbar {
     width: 100%;
     height: 81px;
@@ -28,6 +34,7 @@ a , .nav-link {
     height: 700px;
     background-image: url('../images/Image\ \(6\).png');
     background-repeat: no-repeat;
+    border-radius: 0 !important;
 }
 
 .h-haltec {
@@ -103,7 +110,7 @@ a , .nav-link {
     margin-top: 20px;
 }
 
-.card:hover {
+.card:hover{
     -webkit-transition:all .9s ease; 
     -moz-transition:all .9s ease; 
     -o-transition:all .9s ease;
@@ -115,6 +122,11 @@ a , .nav-link {
 .img-card {
     margin-top: 60px;
     margin-left: 40px;
+}
+
+.card:hover .p-title,
+.card:hover .p-card {
+    color: #fff !important;
 }
 
 .p-title {
@@ -130,6 +142,7 @@ a , .nav-link {
     margin-left: 35px;
 }
 
+
 .p-card {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -141,6 +154,7 @@ a , .nav-link {
     margin-top: 10px;
     margin-left: 30px;
 }
+
 
 .study-case {
     margin-top: 80px;
@@ -165,16 +179,6 @@ a , .nav-link {
     letter-spacing: 0.012em;
 }
 
-.see {
-    font-family: 'Roboto', sans-serif;
-    margin-left: 30px;
-    letter-spacing: 0.012em;
-    color: #4A93FF;
-}
-
-.card-case {
-    
-}
 
 .card-case .img-card-case {
     -webkit-transition:all .9s ease; 
@@ -420,6 +424,7 @@ a , .nav-link {
 .text-slider {
     font-family: 'Roboto', sans-serif !important;
     color: #282828;
+    font-size: 18px;
 }
 
 a {
@@ -442,4 +447,8 @@ a.left {
 
 a.right {
 	background-position: right bottom;
+}
+
+.carousel-control-next, .carousel-control-prev  {
+    opacity: 1;
 }

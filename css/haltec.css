@@ -3,6 +3,7 @@
 
 body {
     overflow-x:hidden;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 section {
@@ -18,7 +19,6 @@ section {
 }
 
 .navbar-nav, .nav-link {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 21px;
@@ -35,10 +35,11 @@ a , .nav-link {
     background-image: url('../images/Image\ \(6\).png');
     background-repeat: no-repeat;
     border-radius: 0 !important;
+    background-position: center;
+    background-position: fixed ;
 }
 
 .h-haltec {
-    font-family: 'Roboto', sans-serif;
     line-height: 75px;
     letter-spacing: 0.03em;
     font-weight: 900
@@ -65,7 +66,6 @@ a , .nav-link {
 
 .tagline {
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     line-height: 75px;
     letter-spacing: 0.03em;
@@ -84,7 +84,6 @@ a , .nav-link {
 }
 
 .p-haltec {
-    font-family: 'Roboto', sans-serif;
     color: #282828;
     font-style: normal;
     font-size: 19px;
@@ -92,7 +91,6 @@ a , .nav-link {
 }
 
 .p-layanan {
-    font-family: 'Poppins', sans-serif;
     font-size: 32px;
     line-height: 48px;
     font-weight: bold;
@@ -102,7 +100,6 @@ a , .nav-link {
 
 .card {
     height: 386px;
-    width: 346px;
     background: #FFFFFF;
     box-shadow: -6px -6px 6px 14px rgba(113, 109, 109, 0.036), 6px 6px 6px 14px rgba(113, 109, 109, 0.036);
     border-radius: 7px;
@@ -130,7 +127,6 @@ a , .nav-link {
 }
 
 .p-title {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -144,7 +140,6 @@ a , .nav-link {
 
 
 .p-card {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -170,7 +165,6 @@ a , .nav-link {
 }
 
 .p-studi-haltec {
-    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 36px;
     color: #282828;
@@ -198,7 +192,6 @@ a , .nav-link {
 }
 
 .text-card-case {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 21px;
     line-height: 36px;
@@ -222,7 +215,6 @@ a , .nav-link {
 }
 
 .p-project {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -242,7 +234,6 @@ a , .nav-link {
 }
 
 .p-sebagai {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 30px;
@@ -281,7 +272,6 @@ a , .nav-link {
 }
 
 .p-kata-mereka {
-    font-family: 'Roboto', sans-serif;
     color: #474747;
     letter-spacing: 0.012em;
     font-weight: 500;
@@ -299,7 +289,6 @@ a , .nav-link {
 }
 
 .nav-link-active {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 21px;
@@ -359,7 +348,6 @@ a , .nav-link {
 }
 
 .h-alamat {
-    font-family: 'Roboto', sans-serif;
     font-size: 21px;
     line-height: 36px;
     color: #282828;
@@ -367,37 +355,42 @@ a , .nav-link {
 }
 
 .h-tentang {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 21px;
     line-height: 36px;
 }
 
-.p-help {
-    font-family: 'Roboto', sans-serif;
+.tagline-footer {
     color: #142B72;
     font-weight: bold;
     font-size: 21px;
     line-height: 36px;
 }
 
-.p-alamat {
+.title-footer {
     font-weight: normal !important;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 30px;
+    color: #282828;
+    font-weight: 500;
+}
+
+
+.text-footer {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
     color: #282828;
 
 }
 
 .span-whatsapp {
-    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
 }
 
 .span-instagram {
-    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
@@ -417,7 +410,6 @@ a , .nav-link {
 
 
 .p-copyright {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
@@ -451,4 +443,36 @@ a.right {
 
 .carousel-control-next, .carousel-control-prev  {
     opacity: 1;
+}
+
+.wgl-tabs-headings {
+    display: inline-flex;
+    
+}
+
+.wgl-tabs-headings {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: calc(25px + 4px) calc(25px + 4px) calc(25px + 4px) calc(25px + 4px);
+    background: #142B72;
+}
+
+.wgl-tabs-header{
+    background-color: #4A93FF;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 7px;
+}
+
+.tab-title {
+    margin: 20px 10px 0px 0px;
+    padding: 20px 40px 15px 40px;
+    min-width: 152px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.tab-title {
+    cursor: pointer;
+    transition: all 0.4s, color 0s;
 }

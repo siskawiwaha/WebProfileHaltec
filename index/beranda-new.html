@@ -91,10 +91,10 @@
             </div>
             <div class="row">
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="card-1">
                         <div class="img-card">
                             <img class="img-front" src="../images/img-card.png" alt="">
-                            <img class="img-back" src="../images/img-card-0.png" alt="">
+                            <img class="img-back" id="img-back-1" style="display: none;" src="../images/img-card-0.png" alt="">
                         </div>
                         <div class="title-card">
                             <p class="p-title">
@@ -107,10 +107,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="card-2">
                         <div class="img-card">
                             <img class="img-front" src="../images/img-card-1.png" alt="">
-                            <img class="img-back" src="../images/img-card-1.1.png" alt="">
+                            <img class="img-back" id="img-back-2" style="display: none;" src="../images/img-card-1.1.png" alt="">
                         </div>
                         <div class="title-card">
                             <p class="p-title">
@@ -123,10 +123,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="card-3">
                         <div class="img-card">
                             <img class="img-front" src="../images/img-card-2.png" alt="">
-                            <img class="img-back" src="../images/img-card-2.2.png" alt="">
+                            <img class="img-back" id="img-back-3" style="display: none;" src="../images/img-card-2.2.png" alt="">
                         </div>
                         <div class="title-card">
                             <p class="p-title">
@@ -510,15 +510,15 @@
                         <div class="footer-logo">
                             <img src="../images/LOGO_HALTEC_REMAKE_66 1.png" alt="logo">
                         </div>
-                        <p class="mt-3 p-help">Help You With <br>
+                        <p class="mt-3 tagline-footer">Help You With <br>
                         Creative Solution
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="h-alamat">
+                        <h3 class="title-footer">
                             Alamat
                         </h3>
-                        <p class="p-alamat">
+                        <p class="text-footer">
                             Perumahan Graha Asri Utomo No. C17,<br> Ringinsari, Ringinpitu, Kec. Kedungwaru, <br>
                             Kab. Tulungagung, Jawa Timur 66229
                         </p>
@@ -587,15 +587,34 @@
             }
         });
         
-
-    $('.card').mouseenter(function(){
-        $('.p-title').css("color","#ffff")
-        $('.p-card').css("color","#ffff")
-    })
-    $('.card').mouseover(function(){
-        $('.p-title').css("color","#000")
-        $('.p-card').css("color","#000")
-    })
+    
+    $("#card-1").on({
+        mouseenter: function () {
+            $('#img-back-1').css('display', 'block')
+            $('#img-back-1').css('margin-top', '-62px')
+        },
+        mouseleave: function () {
+            $('#img-back-1').css('display', 'none')
+        }
+    });
+    $("#card-2").on({
+        mouseenter: function () {
+            $('#img-back-2').css('display', 'block')
+            $('#img-back-2').css('margin-top', '-62px')
+        },
+        mouseleave: function () {
+            $('#img-back-2').css('display', 'none')
+        }
+    });
+    $("#card-3").on({
+        mouseenter: function () {
+            $('#img-back-3').css('display', 'block')
+            $('#img-back-3').css('margin-top', '-62px')
+        },
+        mouseleave: function () {
+            $('#img-back-3').css('display', 'none')
+        }
+    });
 
 
 
@@ -647,7 +666,7 @@ animate(text4, 0, 11, 500);
 
     $(window).scroll(function() {   
         var scroll = $(window).scrollTop();
-        if (scroll >= 2800 && scroll <= 3000) {
+        if (scroll == 2800) {
             animate(text1, 0, 100, 500);
             animate(text2, 0, 76, 500);
             animate(text3, 100, 3, 500);
@@ -666,6 +685,38 @@ document.querySelector(elem.getAttribute('href')).scrollIntoView({
     });
 });
 
+
+
+// var isAlreadyRun = false;
+
+// $(window).scroll( function(){
+
+//     $('.text-icon').each( function(i){
+
+//         var bottom_of_object = $(this).position().top + $(this).outerHeight() / 2;
+//         var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+//             if( bottom_of_window > ( bottom_of_object + 20 )  ){
+// 				if (!isAlreadyRun) {
+// 					$('.number').each(function () {
+                
+//                 $(this).prop('Counter', 0).animate({
+//                     Counter: $(this).text()
+//                 }, {
+//                         duration: 1500,
+//                         easing: 'swing',
+//                         step: function (now) {
+//                             $(this).text(Math.ceil(now));
+//                         }
+//                     });
+//                 });
+// 				}
+//                 isAlreadyRun = true;
+//             }
+//     }); 
+
+// });
     </script>
 </body>
 </html>

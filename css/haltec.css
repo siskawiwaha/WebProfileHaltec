@@ -20,29 +20,51 @@ section {
 
 .navbar-nav, .nav-link {
     font-style: normal;
-    font-size: 17px;
+    font-size: 17px !important;
     line-height: 21px;
     font-weight: bold;
     text-align: center;
     display: flex;
 }
 
-a , .nav-link {
+.nav-link {
     color: #FFFFFF;
 }
+
+.navbar-active {
+    background: #fff !important;
+}
+
+.nav-link-active {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #282828;
+}
+
+
 .jumbotron {
-    height: 700px;
+    margin-bottom: 0 !important ;
+    height: 680px;
     background-image: url('../images/Image\ \(6\).png');
     background-repeat: no-repeat;
     border-radius: 0 !important;
     background-position: center;
-    background-position: fixed ;
 }
 
 .h-haltec {
     line-height: 75px;
     letter-spacing: 0.03em;
     font-weight: 900
+}
+
+.title-product {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.03em;
 }
 
 .content-klien {
@@ -284,22 +306,6 @@ a , .nav-link {
     margin: auto;
 }
 
-.navbar-active {
-    background: #fff !important;
-}
-
-.nav-link-active {
-    font-style: normal;
-    font-size: 17px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #282828;
-}
-
-.non-active {
-    color: #fff;
-}
-
 .img-klien-1 {
     opacity: 0.4;
     transition: transform 250ms;
@@ -416,33 +422,82 @@ a , .nav-link {
 .text-slider {
     font-family: 'Roboto', sans-serif !important;
     color: #282828;
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
-a {
-    background-color: #fff;
-    color: #fff;
-	font-size: 500%;
-	text-decoration: none;
-	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
-	transition: 1s background-size;
-}
-
-a:hover {
-	background-size: 100% .1em;
-}
 
 /* Variations */
-a.left {
+.left {
 	background-position: left bottom;
 }
 
-a.right {
+.right {
 	background-position: right bottom;
 }
 
 .carousel-control-next, .carousel-control-prev  {
     opacity: 1;
+}
+
+/* start css page tentang kami */
+
+.title-kami {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0.012em;
+    line-height: 48px;
+}
+
+.text-visi-misi {
+    color: #282828;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.text-kami {
+    font-size: 21px;
+    line-height: 36px;
+}
+
+.section-kontent-kami {
+    height: 570px;
+    background: rgba(196, 196, 196, 0.12);
+}
+
+.img-card-team {
+    border: 2.7px solid #142B72;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+    transition: transform 250ms;
+}
+
+.img-card-team:hover {
+    transform: translateY(-20px);
+}
+.icon-team{
+    transition: transform 250ms;
+}
+.icon-team:hover {
+    transform: translateY(-10px);
+}
+
+.text-title-team {
+    color: #282828;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;    
+    line-height: 26px;
+    letter-spacing: 0.024em;
+}
+
+.text-name-team {
+    color: #4A93FF;
+    letter-spacing: 0.024em;
+    line-height: 23px;
+    font-size: 20px
 }
 
 .wgl-tabs-headings {
@@ -475,4 +530,63 @@ a.right {
 .tab-title {
     cursor: pointer;
     transition: all 0.4s, color 0s;
+}
+
+/* start css Software Development */
+
+.title-layanan {
+    font-family: 'Poppins', sans-serif;
+    color: #282828;
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+.title-layanan-kami {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #282828;
+    letter-spacing: 0.012em;
+}
+
+.text-information {
+    font-size: 19px;
+    line-height: 34px;
+    text-align: left;
+}
+
+.card-dev {
+    border-radius: 7px;
+    box-shadow: -7px -7px 7px 14px rgba(113, 109, 109, 0.036), 7px 7px 7px 14px rgba(113, 109, 109, 0.036);
+    height: 280px;
+}
+
+.title-dev {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.012em;
+    color: #142B72;
+
+}
+.text-title-sampaikan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.text-tim-kami {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: normal !important;
+}
+
+.text-portofolio {
+    font-size: 21px;
+    line-height: 36px;
+    color: #282828;
 }

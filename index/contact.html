@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/haltec.css">
+    <link rel="stylesheet" href="../plugins/animate/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../plugins/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../plugins/slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="../plugins/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../plugins/slick-master/slick/slick-theme.less">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Contact Us!</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img-off" src="../images/Logo (5).png" alt="">
+                <img  style="display: none;" class="img-on" src="../images/Logo (3).png" alt="">
+            </a>
+            <div class=" navbar-collapse">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link non-active" href="#header-haltec">Beranda</a>
+                    <a class="nav-link non-active" href="#tentang-kami">Tentang Kami</a>
+                    <a class="nav-link non-active" href="#content-layanan">Layanan</a>
+                    <a class="nav-link non-active" href="#studi-kasus">Portofolio</a>
+                    <a class="nav-link non-active" href="#content-footer">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="jumbotron">
+            <div class="container content-top" id="header-haltec">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-white text-center title-product mt-5 pt-5">Kontak</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="title-layanan mt-5">Hubungi Kami Sekarang</p>
+                <p>Kami dapat terhubung dengan anda dimanapun dan kapanpun. Jangan ragu untuk menghubungi tim praktisi kami.
+                    ‘With just one click’. Kami ada untuk anda dalam waktu 24 jam untuk membantu menyelesaikan permasalahan bisnis anda.
+                    Tinggalkan pesan pada kontak Halte Creative yang tersedia.
+                </p>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../images/location 1.png" alt="">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            Alamat Kantor:
+                        </p>
+                        <p>Perumahan Graha Asri Utomo No. C17, Ringinsari,
+                            Ringinpitu, Kec. Kedungwaru, Kab. Tulungagung, Jawa Timur 66229
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../images/viber 1.png" alt="">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            Kontak:
+                        </p>
+                        <p>
+                            0812 3456 7890
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../images/mail 1.png" alt="">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            crop.haltec@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/wow/dist/wow.min.js"></script>
+    <script src="../plugins/slick-master/slick/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"></script>
+    <script>
+        new WOW().init();
+
+        $(window).scroll(function() {   
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+                $(".navbar").addClass("navbar-active")
+                $(".nav-link").addClass("nav-link-active")
+                $(".nav-link").removeClass("non-active")
+                $(".img-off").css("display", "none")
+                $(".img-on").css("display" ,"block")
+                
+            } else {
+                $(".navbar").removeClass("navbar-active")
+                $(".nav-link").removeClass("nav-link-active")
+                $(".nav-link").addClass("non-active")
+                $(".img-off").css("display", "block")
+                $(".img-on").css("display", "none")
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(elem => {
+    elem.addEventListener('click', e => {
+        e.preventDefault();
+    document.querySelector(elem.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            offsetTop: 20
+        });
+    });
+}); 
+</script>
+</body>
+</html>

@@ -14,13 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../plugins/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="../plugins/slick-master/slick/slick-theme.css">
     <link rel="stylesheet" href="../plugins/slick-master/slick/slick.css">
     <link rel="stylesheet" href="../plugins/slick-master/slick/slick-theme.less">
-    <title>Tentang Haltec</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Tentang Kami</title>
 </head>
 <body>
-    
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -42,13 +45,10 @@
 
     <section>
         <div class="jumbotron">
-            <div class="container content-top" id="header-haltec">
+            <div class="container" id="header-haltec" style="margin-top: 120px;">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="text-white h-haltec">WITH HALTEC</h1>
-                        <p class="text-white tagline">
-                            Big Step to Grow Creatively
-                        </p>
+                        <h1 class="text-white title-product text-center mt-5 pt-5">Tentang Halte Creative</h1>
                     </div>
                 </div>
             </div>
@@ -56,21 +56,22 @@
     </section>
 
 
-    <section>
+    <section class="content-kami" style="background: rgba(196, 196, 196, 0.12); height: 500px;">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 mt-5 pt-5">
                     <img src="../images/img-fotbar.png" alt="">
+                    <img style="margin-top: -120px; margin-left: 270px;" src="../images/img-fotbar-1.png" alt="">
                 </div>
-                <div class="col-6 mt-2">
-                    <p>
-                        Sekilas Tentang Kami
+                <div class="col-6 mt-5 pt-5">
+                    <p class="title-kami">
+                        Sekilas Tentang Kami    
                     </p>
                     <div class="icn">
                         <img src="../images/icon-horizontal.png" alt="">
                     </div>
-                    <p>
-                        Halte Creative adalah penyedia layanan jasa pembuatan software aplikasi yang berlokasi
+                    <p class="text-kami mt-3">
+                        <strong> Halte Creative </strong> adalah penyedia layanan jasa pembuatan software aplikasi yang berlokasi
                         di Tulungagung, Jawa Timur.
                         Kami memberikan solusi creative untuk membangun permasalahan bisnis dengan memanfaatkan teknologi.
                     </p>
@@ -93,7 +94,7 @@
                         Programmer berkualifikasi tinggi
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 mt-5 pt-3">
                     <div class="content-kami">
                         <img src="../images/img-kami.png" alt="">
                     </div>
@@ -103,47 +104,66 @@
     </section>
 
 
-    <section>
+
+    <section class="mt-5" style="background: rgba(215, 220, 236, 0.42); height: 770px;">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="wgl-tabs-headings">
-                        <h2 class="wgl-tabs-header active">
-                            <span class="tab-title text-white">Misi</span>
-                        </h2>
-                        <h2>
-                            <span class="tab-title text-white">Visi</span>
-                        </h2>
+                <div class="col-12 mt-5 pt-5">
+                    <div class="form-group d-flex justify-content-center">
+                        <div class="wgl-tabs-headings pt-2 pb-2 pr-2 pl-2">
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary rounded-pill text-white font-weight-bold mr-2" id="pertama" style="width: 8em">Misi</button>
+                                </div>
+                                <button type="button" class="btn btn-transparent text-white font-weight-bold rounded-pill" id="kedua" style="width: 8em">Visi</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="img-panah">
-                        <img class="mx-auto d-block" src="../images/img-panah.png" alt="">
+                    <div class="img-panah d-flex justify-content-center">
+                        <img class="mt-4" src="../images/img-panah.png" alt="">
                     </div>
-                    <div class="p-tengah">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        </p>
+                    <div class="form-group d-flex justify-content-center mt-4">
+                        <div id="pertama-content">
+                            <p class="text-center text-visi-misi ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt recusandae consequatur, blanditiis, ea provident sequi possimus
+                                labore expedita, quos voluptate illum tempora maxime minus illo natus?
+                                Tempora amet doloribus ad?
+                            </p>
+                            <p class="text-center text-visi-misi">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt recusandae consequatur, blanditiis, ea provident sequi possimus
+                                labore expedita, quos voluptate illum tempora maxime minus illo natus?
+                                Tempora amet doloribus ad?
+                            </p>
+                            <p class="text-center text-visi-misi">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt recusandae consequatur, blanditiis, ea provident sequi possimus
+                                labore expedita, quos voluptate illum tempora maxime minus illo natus?
+                                Tempora amet doloribus ad?
+                            </p>
+                        </div>
+                        <div id="kedua-content" style="display: none">
+                            <p class="text-center text-visi-misi">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt recusandae consequatur, blanditiis, ea provident sequi possimus
+                                labore expedita, quos voluptate illum tempora maxime minus illo natus?
+                                Tempora amet doloribus ad?
+                            </p>
+                            <p class="text-center text-visi-misi">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt recusandae consequatur, blanditiis, ea provident sequi possimus
+                                labore expedita, quos voluptate illum tempora maxime minus illo natus?
+                                Tempora amet doloribus ad?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 mt-5">
                     <div class="title-team d-flex justify-content-center">
-                        <p>
+                        <p class="title-kami">
                             Team Halte Creative
                         </p>
                     </div>
@@ -152,26 +172,140 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center  text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center  text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center  text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center  text-name-team">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-team">
+                        <div class="card-img-team d-flex justify-content-center">
+                            <img  class="img-card-team" src="../images/img-card-team.png" alt="">
+                        </div>
+                        <img class="icon-team" src="../images/icon-team.png" style="margin-top: -77px; margin-left: 157px;">
+                        <div class="card-body">
+                            <p class="text-center  text-title-team">
+                                Nama Lengkap
+                            </p>
+                            <p class="text-center">
+                                Leader
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <footer id="content-footer">
@@ -182,15 +316,15 @@
                         <div class="footer-logo">
                             <img src="../images/LOGO_HALTEC_REMAKE_66 1.png" alt="logo">
                         </div>
-                        <p class="mt-3 p-help">Help You With <br>
+                        <p class="mt-3 tagline-footer">Help You With <br>
                         Creative Solution
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="h-alamat">
+                        <h3 class="title-footer">
                             Alamat
                         </h3>
-                        <p class="p-alamat">
+                        <p class="text-footer">
                             Perumahan Graha Asri Utomo No. C17,<br> Ringinsari, Ringinpitu, Kec. Kedungwaru, <br>
                             Kab. Tulungagung, Jawa Timur 66229
                         </p>
@@ -210,7 +344,7 @@
                             </span>
                         </div>
                         <div class="item-footer mt-3">
-                            <img src="../images/instagram 1.png" alt="">
+                            <img src="../images/instagram 1.png" onclick="window.open('https://www.instagram.com/halte_creative')">
                             <span class="span-instagram ml-3">
                                 Instagram
                             </span>
@@ -230,6 +364,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -257,6 +392,26 @@
                 $(".img-on").css("display", "none")
             }
         });
+
+        
+
+        $('#kedua').click(function() {
+            $('#kedua').removeClass('btn-transparent');
+            $('#kedua').addClass('btn-primary');
+            $('#kedua-content').css('display', 'block');
+            $('#pertama-content').css('display', 'none');
+            $('#pertama').removeClass('btn-primary');
+            $('#pertama').addClass('btn-transparent');
+        })
+
+        $('#pertama').click(function() {
+            $('#pertama').removeClass('btn-transparent');
+            $('#pertama').addClass('btn-primary');
+            $('#kedua-content').css('display', 'none');
+            $('#pertama-content').css('display', 'block');
+            $('#kedua').removeClass('btn-primary');
+            $('#kedua').addClass('btn-transparent');
+        })
 
         document.querySelectorAll('a[href^="#"]').forEach(elem => {
     elem.addEventListener('click', e => {

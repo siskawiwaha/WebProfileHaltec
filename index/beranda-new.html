@@ -58,7 +58,6 @@
         </div>
     </section>
 
-
     <section>
         <div class="container content-1" id="tentang-kami">
             <div class="row">
@@ -446,15 +445,12 @@
         </div>
     </section>
 
-    <section>
-
-    </section>
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:1153.79pxpx; height:250px; background: rgba(215, 220, 236, 0.32); border-radius: 21px ">
             <div class="carousel-inner">
                 <div class= "carousel-item active">
                     <div class="container" >
-                        <div style="position: relative; top: 75px; width: 612px; margin: auto; height: 225px;text-align: center;">
+                        <div style=" margin-top: 75px; height: 225px; text-align: center; margin-left:60px; margin-right: 60px;">
                             <p class="text-slider">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ultrices bibendum id.
                                 Vitae id hendrerit duis magna. Ligula massa malesuada tellus nec, habitant. Pulvinar in
@@ -466,7 +462,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container" >
-                        <div style="position: relative; top: 75px; width: 612px; margin: auto; height: 225px;text-align: center;">
+                        <div style="margin-top: 75px; height: 225px; text-align: center; margin-left:60px; margin-right: 60px;">
                             <p class="text-slider">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ultrices bibendum id.
                                 Vitae id hendrerit duis magna. Ligula massa malesuada tellus nec, habitant. Pulvinar in
@@ -478,7 +474,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div style="position: relative; top: 75px; width: 612px; margin: auto; height: 225px;text-align: center;">
+                        <div style=" margin-top: 75px; height: 225px;text-align: center; margin-left:60px; margin-right: 60px;">
                             <p class="text-slider">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ultrices bibendum id.
                                 Vitae id hendrerit duis magna. Ligula massa malesuada tellus nec, habitant. Pulvinar in
@@ -490,18 +486,17 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <button type="button-next" class="btn btn-lg" style="background-color: #ffff; margin-right: 140px; width: 78.22px; border-radius: 100px;">
+                <span type="button-next" class="btn btn-lg" style="background-color: #ffff; margin-right: 140px; width: 78.22px; border-radius: 100px;">
                     <i class="fa fa-arrow-left" style="color: #142B72"></i>
-                </button>
+                </span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <button type="button-next" class="btn btn-lg" style="background-color: #ffff; margin-left: 140px; width: 78.22px; border-radius: 100px;">
+                <span type="button-next" class="btn btn-lg" style="background-color: #ffff; margin-left: 140px; width: 78.22px; border-radius: 100px;">
                     <i class="fa fa-arrow-right" style="color: #142B72"></i>
-                </button>
+                </span>
             </a>
         </div>
     </div>
-
     <footer id="content-footer">
         <div class="footer-wrap mt-5">
             <div class="container mt-5">
@@ -567,9 +562,10 @@
     <script src="../plugins/fontawesome/js/fontawesome.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"></script>
     <script>
-            new WOW().init();
+        new WOW().init();
+        var isNumberCounted = false;
 
-            $(window).scroll(function() {   
+        $(window).scroll(function() {   
             var scroll = $(window).scrollTop();
             if (scroll >= 500) {
                 $(".navbar").addClass("navbar-active")
@@ -588,135 +584,108 @@
         });
         
     
-    $("#card-1").on({
-        mouseenter: function () {
-            $('#img-back-1').css('display', 'block')
-            $('#img-back-1').css('margin-top', '-62px')
-        },
-        mouseleave: function () {
-            $('#img-back-1').css('display', 'none')
-        }
-    });
-    $("#card-2").on({
-        mouseenter: function () {
-            $('#img-back-2').css('display', 'block')
-            $('#img-back-2').css('margin-top', '-62px')
-        },
-        mouseleave: function () {
-            $('#img-back-2').css('display', 'none')
-        }
-    });
-    $("#card-3").on({
-        mouseenter: function () {
-            $('#img-back-3').css('display', 'block')
-            $('#img-back-3').css('margin-top', '-62px')
-        },
-        mouseleave: function () {
-            $('#img-back-3').css('display', 'none')
-        }
-    });
+        $("#card-1").on({
+            mouseenter: function () {
+                $('#img-back-1').css('display', 'block')
+                $('#img-back-1').css('margin-top', '-62px')
+            },
+            mouseleave: function () {
+                $('#img-back-1').css('display', 'none')
+            }
+        });
+
+        $("#card-2").on({
+            mouseenter: function () {
+                $('#img-back-2').css('display', 'block')
+                $('#img-back-2').css('margin-top', '-62px')
+            },
+            mouseleave: function () {
+                $('#img-back-2').css('display', 'none')
+            }
+        });
+
+        $("#card-3").on({
+            mouseenter: function () {
+                $('#img-back-3').css('display', 'block')
+                $('#img-back-3').css('margin-top', '-62px')
+            },
+            mouseleave: function () {
+                $('#img-back-3').css('display', 'none')
+            }
+        });
 
 
 
-    function animate(obj, initVal, lastVal, duration) {
-let startTime = null;
+        function animate(obj, initVal, lastVal, duration) {
+            let startTime = null;
 
-//get the current timestamp and assign it to the currentTime variable
-let currentTime = Date.now();
+            //get the current timestamp and assign it to the currentTime variable
+            let currentTime = Date.now();
 
-//pass the current timestamp to the step function
-const step = (currentTime ) => {
+            //pass the current timestamp to the step function
+            const step = (currentTime ) => {
 
-    //if the start time is null, assign the current time to startTime
-    if (!startTime) {
-            startTime = currentTime ;
-    }
+            //if the start time is null, assign the current time to startTime
+            if (!startTime) {
+                    startTime = currentTime ;
+            }
 
-    //calculate the value to be used in calculating the number to be displayed
-    const progress = Math.min((currentTime  - startTime) / duration, 1);
+            //calculate the value to be used in calculating the number to be displayed
+            const progress = Math.min((currentTime  - startTime) / duration, 1);
 
-    //calculate what to be displayed using the value gotten above
-    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+            //calculate what to be displayed using the value gotten above
+            obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
 
-    //checking to make sure the counter does not exceed the last value (lastVal)
-    if (progress < 1) {
-        window.requestAnimationFrame(step);
-    }
-    else{
-            window.cancelAnimationFrame(window.requestAnimationFrame(step));
-    }
-};
+            //checking to make sure the counter does not exceed the last value (lastVal)
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+            else{
+                    window.cancelAnimationFrame(window.requestAnimationFrame(step));
+            }
+        };
 
 //start animating
-window.requestAnimationFrame(step);
-}
+    window.requestAnimationFrame(step);
+    }
 
-let text1 = document.getElementById('number-project');
-let text2 = document.getElementById('number-project-1');
-let text3 = document.getElementById('number-project-2');
-let text4 = document.getElementById('number-project-3');
+    let text1 = document.getElementById('number-project');
+    let text2 = document.getElementById('number-project-1');
+    let text3 = document.getElementById('number-project-2');
+    let text4 = document.getElementById('number-project-3');
 
-const load = () => {
-animate(text1, 0, 100, 500);
-animate(text2, 0, 76, 500);
-animate(text3, 100, 3, 500);
-animate(text4, 0, 11, 500);
-}
+    const load = () => {
+        animate(text1, 0, 100, 800);
+        animate(text2, 0, 76, 800);
+        animate(text3, 100, 3, 800);
+        animate(text4, 0, 11, 800);
+    }
 
 
     $(window).scroll(function() {   
         var scroll = $(window).scrollTop();
-        if (scroll == 2800) {
-            animate(text1, 0, 100, 500);
-            animate(text2, 0, 76, 500);
-            animate(text3, 100, 3, 500);
-            animate(text4, 0, 11, 500);
+        if (scroll > 2800) {
+            if (!isNumberCounted) {
+                isNumberCounted = true;
+                animate(text1, 0, 100, 900);
+                animate(text2, 0, 76, 900);
+                animate(text3, 100, 3, 800);
+                animate(text4, 0, 11, 900);
+            }
         }
     });
 
 // smmoth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(elem => {
-    elem.addEventListener('click', e => {
-        e.preventDefault();
-document.querySelector(elem.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            offsetTop: 20
+    document.querySelectorAll('a[href^="#"]').forEach(elem => {
+        elem.addEventListener('click', e => {
+            e.preventDefault();
+    document.querySelector(elem.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+                offsetTop: 20
+            });
         });
     });
-});
 
-
-
-// var isAlreadyRun = false;
-
-// $(window).scroll( function(){
-
-//     $('.text-icon').each( function(i){
-
-//         var bottom_of_object = $(this).position().top + $(this).outerHeight() / 2;
-//         var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-
-//             if( bottom_of_window > ( bottom_of_object + 20 )  ){
-// 				if (!isAlreadyRun) {
-// 					$('.number').each(function () {
-                
-//                 $(this).prop('Counter', 0).animate({
-//                     Counter: $(this).text()
-//                 }, {
-//                         duration: 1500,
-//                         easing: 'swing',
-//                         step: function (now) {
-//                             $(this).text(Math.ceil(now));
-//                         }
-//                     });
-//                 });
-// 				}
-//                 isAlreadyRun = true;
-//             }
-//     }); 
-
-// });
     </script>
 </body>
 </html>
